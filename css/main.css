@@ -61,6 +61,7 @@ header h1 {
 	display: block;
 	border-bottom: 3px solid #77a466;
 }
+
 header h1 span {
 	color: #77a466;
 }
@@ -112,6 +113,7 @@ header nav ul li a{
 }
 .main-image img {
 	width: 100%;
+	border-top: 3px solid #77a466;
 	border-bottom: 3px solid #77a466;
 }
 
@@ -183,4 +185,68 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+
+
+/***** BREAKPOINTS *****/
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+	.bottom-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding-right: 20px;
+		text-align: center;
+	}
+
+
+	.section-two,
+	.section-three {
+		padding-left: 20px;
+
+}
+	
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+ 
+	
+	header {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	
+	header nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+
+	}
+
+	header h1 {
+		width: 40%;
+		padding: 40px 10px;
+		text-align: left;
+		border-bottom: none;
+	}
+	
+	
+	header nav {
+		width: 40%;
+		padding: 0px;
+	}
+		
+
 }
